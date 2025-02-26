@@ -7,7 +7,7 @@ var cnt = Number(countItem.innerText);
 
 function increaseCount() {
     if(cnt === 10){
-        notic.innerText = "You can't purchase more then 5 items";
+        notic.innerText = "You can't purchase more than 10 items";
         setTimeout(clearNotice, 3000);
         return;
     }
@@ -37,12 +37,16 @@ function clearNotice(){
 
 
 var addCart = document.getElementById('add');
+var originalText = addCart.innerText; // Store the original text
 
-
-function addToCart(){
+function addToCart() {
     addCart.innerText = 'Added';
+    setTimeout(vanishAdded, 3000); // Revert back after 3 seconds
     return;
+}
 
+function vanishAdded() {
+    addCart.innerText = originalText; // Restore original button text
 }
 
 
