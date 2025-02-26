@@ -6,8 +6,12 @@
     width: 100%;
   }
   .product-img-wrapper{
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
+  }
+
+  .product-img img{
+    width: 100%;
   }
   
   .product-details-wrapper {
