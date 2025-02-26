@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+ <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- font awesome cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- custom css link -->
+
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/responsive.css">
+
+        <title>E-Commerce Page</title>
+       
+     </head>
+        <body>
+            <!-- header section start -->
+             <header>
+                <nav class="menu">
+                    <div class="left-menu-wrapper">
+                        <div class="logo">
+                            <img src="./logo.svg" alt="Sneaker Logo">
+                        </div>
+                        <div class="menu-items">
+                            <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
+                            <ul>
+                                <li><a href="">Collections</a></li>
+                                <li><a href="">Man</a></li>
+                                <li><a href="">Women</a></li>
+                                <li><a href="">About</a></li>
+                                <li><a href="">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="right-menu-wrapper">
+                        <div class="cart-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+                        <div class="profile-img">
+                            <img src="./image-avatar.png" alt="avatar">
+                        </div>
+                    </div>
+
+                </nav>
+             </header>
+             <!-- header section end -->
+              <!-- main section start -->
+               <section>
+                <div class="product-wrapper">
+                    <div class="product-img-wrapper">
+                        <div class="product-img">
+                            <img src="./image-product-1.jpg" alt="product main image">
+                        </div>
+                        <div class="thumbnail-img-wrapper">
+
+                            <div class="thumbnail-img">
+                                <img src="./image-product-1.jpg" alt="thumbnail image 1">
+
+                            </div>
+                            <div class="thumbnail-img">
+                                <img src="./image-product-2-thumbnail.jpg" alt="">
+                            </div>
+                            <div class="thumbnail-img">
+                                <img src="./image-product-3-thumbnail.jpg" alt="">
+                            </div>
+                            <div class="thumbnail-img">
+                                <img src="./image-product-4-thumbnail.jpg" alt="">
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="product-details-wrapper">
+                        <div class="product-details">
+                            <h3>Sneakers Company</h3>
+                            <h1>fall limited edition sneakers</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus provident, deserunt iste quis ad debitis voluptas voluptates, ab est eligendi asperiores? Ea sed officia doloribus!</p>
+                            <div class="pricing-wrapper">
+                                <p> &dollar;125.00</p>
+                                <span class="badge">50%</span>
+                                
+                            </div>
+                            <del>&dollar;250.00</del>
+                            <p id = "notice", style = "color: brown; font-size: 11px;"></p>
+                            <div class="btn-wrapper">
+
+                                <div class="plus-minus-btn">
+                        
+
+                                    <button class="minus-btn" type="button" onclick="decreaseCount()">
+                                        <i class="fa-solid fa-minus"></i>
+                                    </button>
+                                    
+                                    <span id="count">0</span>
+                                    
+                                    <button class="plus-btn" type="button" onclick="increaseCount()">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </button>
+                                    
+
+                                </div>
+                                <div class="cart-btn-wrapper">
+                                    <button id="add" class="cart-btn" type="button" onclick ="addToCart()" ><i
+                                         class="fa-solid fa-cart-shopping"></i>
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               </section>
+               <!-- main section end -->
+
+               <script src="./script.js"></script>
+
+
+              
+
+            
+        </body>
+        </html>
