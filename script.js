@@ -18,7 +18,7 @@ function increaseCount() {
 
 function decreaseCount() {
     if(cnt === 1){
-        notic.innerText = "Cart item can't be less then 1";
+        notic.innerText = "Cart item can't be less than 1 item!!";
         setTimeout(clearNotice, 3000);
         return;
     
@@ -40,7 +40,7 @@ var addCart = document.getElementById('add');
 var originalText = addCart.innerText; // Store the original text
 
 function addToCart() {
-    addCart.innerText = 'Added';
+    addCart.innerText = 'Added to Cart';
     setTimeout(vanishAdded, 3000); // Revert back after 3 seconds
     return;
 }
