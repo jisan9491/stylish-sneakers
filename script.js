@@ -1,3 +1,14 @@
+
+
+var navMenu = document.getElementById("menu");
+
+    
+function toggleMenu() {
+   navMenu.classList.toggle("active");
+}
+
+
+
 var countItem = document.getElementById('count');
 
 var notic = document.getElementById('notice');
